@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    font-family: 'Lora', serif;
+	color: #333333;
+	
+	
+}
+header{
+	border-top: 10px solid purple;
+	padding: 30px;
+}
+h1{
+	font-size:4em;
+    text-align:center; 
+	text-transform: uppercase;
+	letter-spacing: 2px;  
+}
+h1,h2{
+	font-family: 'Londrina Solid', cursive;
+}
+nav ul{
+	list-style-type: none;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 15px 0;
+    margin-top:0;
+    border-top: purple 2px solid;
+    border-bottom: purple 2px solid;
+
+}
+nav li{
+	display: inline;
+    margin: 5px 10px;
+}
+nav a{
+    text-decoration:none;
+    text-transform:uppercase;
+}
+nav a:link{
+	color: #333333;
+}
+nav a:visited{
+	color: #333333;
+}
+nav a:hover{
+	color: black;
+    text-decoration:none;
+}
+nav a:active{
+	color: #999999;
+}
+
+main{
+	max-width: 1200px;
+	margin:0 auto;
+}
+.home-hero{
+
+	background-image:url(images/otter.jpg);
+	height: 475px;
+	background-size:cover;
+	background-position: center;
+	color: #042837;
+	padding: 10px 10px 10px 30px; 
+}
+
+
+h2{
+	margin-bottom:1px;
+	margin-top:5px;
+    font-weight:bold;
+}
+h3{
+	margin-top:1px;
+	margin-bottom:20px;
+	font-weight:bold;
+    
+}
+img{
+    margin:0 auto;
+    
+}
+.col-sm-4 h3{
+    text-align:center;
+}
+blockquote{
+	margin: 30px 0;
+	padding-left: 20px;
+	font-size: 2em;
+}
+footer{
+	color:white;
+	background-color: #333333;
+	margin:40px 0 0 0;
+	display:block;
+}
+footer a:link{
+    color:#ffffff;
+}
+.footer-bottom{
+	background-color: purple;
+	padding: 10px;
+	color: #Ffffff;
+	text-align:center;
+}
+.icons .fa{
+    color: #Ffffff;
+}
+.footer1000{
+	
+	padding: 40px 0 ;
+    color: #Ffffff;
+    max-width:1000px;
+    margin:0 auto;
+    
+}
+
+.fa-camera-retro{
+	font-size: 400px;
+	text-align: center;
+	display:block;
+	margin-left: 40px;
+	margin-top: 10px;
+	color: purple;
+	
+}
+.gallery .preview{
+    width:100%
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
+	border: 2px solid #ddd;
+	box-shadow: 1px 1px 5px 1px #666666;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+	border: 10px solid white;
+	-webkit-box-shadow: 5px 5px 15px 2px #666666; 
+box-shadow: 5px 5px 15px 2px #666666;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto !important;
+    display: block !important;
+}
+
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+	}
+}
+
+/* CSS Adjustments for Smartphones */
+@media only all and (max-width: 768px) {
+	h1{
+	    font-size: 1.5em;
+	}
+}
