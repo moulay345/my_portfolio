@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Lato:wght@300;700&display=swap');
+
+h1{
+	line-height:200%;
+	
+}
+h2{
+	color:#3399CC;
+	font-family:Georgia, serif;
+	
+	
+
+}
+body {
+	 background-color:#FFFFFF;
+	 font-family:Verdana, Arial, Sans-serif;
+	 color:#666666;
+	 
+	
+}
+#wrapper
+{
+		margin-left: auto;
+		margin-right: auto;
+		width:80%; 
+		
+	
+}
+header {
+	Background-color:#000033;
+	color:#FFFFFF;
+	font-family: Georgia, serif;
+
+	
+}
+nav {
+		font-weight:bold;
+		Background-color:#90C7E3;
+
+}
+dt {
+	font-weight:bold;
+	color:#000033;
+}
+.resort {
+	## font-weight:bold;
+	Font-size:1.2em;
+	Color:#000033; 
+
+ 
+
+}
+footer{
+	
+	font-size:.70em; 
+	font-style:italic;
+	text-align:center;
+
+}
