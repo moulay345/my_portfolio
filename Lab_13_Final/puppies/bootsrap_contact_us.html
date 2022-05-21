@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <!--Sets the title for the website. This appears in the browser tab.-->
+      <title>bootstrap_puppies.html</title>
+      <!--This meta tage sets the viewport on the screen to the width of the device. This is important for mobile devices. -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--This is the website description. It may be displayed in a browser search-->
+      <meta name="description" content="This is the website description">
+      <!--This is a reference to the font used on the website. Go to Gooble Fonts and pick out your own favorits font. You will get a new "link" from Google.  See also the change you need to make in css/style.css.-->
+      <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+      <!-- This references the stylesheet for bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <!--This links the style sheet for Font Awesome, where you can get nice icons for your website. -->
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+      <!-- Custom styles for this template. This is last of the CSS stylesheets, so it can override the Bootsrap CSS. Change the name to the name of your style sheet-->
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <header>
+	  
+		<h1><i class="fa fa-gift" aria-hidden="true"></i>Puppies by Bootstrap</h1>	
+	 
+       </header>
+         <nav>
+              <ul>
+				 <li><a href="../../Lab_13_Final/index.html">Back</a></li>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="bootsrap_gallery.html">Puppies</a></li>
+                 <li><a href="bootsrap_about_us.html">About</a></li>
+                 <li><a href="bootsrap_contact_us.html">Contact</a></li>
+
+              </ul>
+        </nav>
+               
+      <main>
+ 
+		 
+		 
+		 
+          <div class="container">
+  <h2></h2>
+ 	<!---<h3>Practice 9_4  page 418</h3>    ---->
+<form method="post" action="https://webdevstudents.com/portfolio/submit-form.php">
+	<h4></h4>
+	<fieldset>
+	
+	<legend>Customer Information</legend><br>
+	<label for="fname">*First Name:</label> 
+	<input type="text" name="fname" id="fname" size="54" required><br><br>
+	<label for="lname">*Last Name:</label> 
+	<input type="text" name="lname" id="lname" size="54" required><br><br>
+	<label for="Email">*Email:</label> 
+	<input type="text" name="email" id="email" required><br><br>
+	
+	<label for="phone">*Phone number:</label>
+	<input type="tel" id="phone" name="phone" placeholder="123-456-6789"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+	<label for="comments">*Comments:</label>
+	<textarea type="text" name="comments" id="comments" rows="7" cols="60" ></textarea><br><br>
+	
+<input id="mySubmit" type="submit" value="Submit">
+<input type="reset">
+	</fieldset>
+ 
+</form>
+</div>
+           
+            
+      </main>
+      <footer>
+          <div class="row icons">
+            
+            	<div class="col-sm-4" >
+                	<a href="https:/facebook.com">
+                		<i class="fa fa-facebook-square" aria-hidden="true"></i>
+                		<h4>Follow us on Facebook</h4>
+                   </a>
+                </div>
+                <div class="col-sm-4" >
+                	<a href="https://linked.com">
+                		<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                		<h4>Connect on Linked In</h4>
+                   </a>
+                </div>
+                <div class="col-sm-4" >
+                	<a href="mailto:idriss3456@yahoo.com">
+                		<i class="fa fa-envelope" aria-hidden="true"></i>
+                		<h4>Email Us</h4>
+                   </a>
+                </div>
+            </div>
+         
+         <small>&copy;Copyright White Buffalo LLC. <br>Best in Show Puppies is a website exercise on Bootstrap columns available on <a href="webdevstudents.com">WebDevStudents.com</a>. The images are royalty-free photos from pixabay.com.</small>
+      </footer>
+      <!--jQuery, Popper, and Bootstrap Javascript files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+   </body>
+</html>
