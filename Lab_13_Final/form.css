@@ -1,0 +1,9 @@
+input[type=submit]
+{
+	background-color:yellow;
+}
+input {
+	background-color:#EEEEEE;
+	height:20px;
+	border-radius: 5px;
+}
