@@ -1,282 +1,59 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap');
-
-/* Added to remove the margins so that the menu bar can stretch
- all the way to the sides of the page */
-body{
-	margin:0;
-	font-family: 'Montserrat', sans-serif;
-}
-/* In order to have the background color fill the entire header, I 
-removed the margin and added some padding. The background color applies 
-to the padding but not to the margin. */
-
-header{
-	xxxbackground-color: #dddddd;
-	background-color:white;
-
-}
-h1{
-	text-align:center;
-	margin:0;
-	padding: 2px;
-	font-size: 40px;
-}
-h2{
-	margin-left: 30px;
-}
-h3{
-	
-}
-h4{
-	
-}
-h5{
-	margin-left: 50px;
-}
-h6{
-	
-}
-p{
-	font-size: 18px;
-	margin-left: 60px;
-}
-ul{
-	margin-left:60px;
-}
-nav{
-	background-color:#69c322;
-	margin:0;
-	border-bottom:1px solid black;
-	border-top: 1px solid black;
-}
-nav ul{
-	list-style-type: none;
-	text-align:center;
-	padding-left:0;
-	padding-top:5px;
-	padding-bottom:5px;
-
-}
-xxxxnav li{
-	display:inline;
-	padding: 5px 10px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap');
+.gallery .preview{
+    width:100%
+    height:auto;
 }
 
-nav li {
-	display: inline;
-	xxxxbackground-color: #c6c6c6;
-	background-color:#097179;
-	padding: 8px 10px;
-	border-radius: 30px;
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
 }
 
-
-
-
-
-
-nav a{
-	text-decoration:none;
-	text-transform: uppercase;
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
-nav a:link{
-	color:white;
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
 }
-nav a:visited{
-	color:white;
-}
-nav a:hover{
-	color:#dddddd;
-}
-nav a:active{
-	color:pink;
-}
+.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
 
-/* I put in a max width of 1000px on the main section because I don't have a lot of content 
-in thie website. On a website with more content and especially 
-with more design and images, I would likely use 1200px as the max-width */
-main{
-	margin: 0 auto;
-	max-width: 1000px;
-	padding:10px;
-	background-color:white;
+.gallery {  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px red;
+}
+ 
+#mx-auto d-block {
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 18px red;
 
+}	
+.frame{
+	width: 800px;
+	height: 500px;
 }
-hr{
-	max-width: 80%;
-	margin: 40px auto;
-	text-align:center;
+.row nobullets{
+	margin-bottom:20px;
 }
-
-/* I added this class so I could do some special styling 
-on the image. */
-.monster{
-	float:left;
-	max-width:40%;
-	height: auto;
-	display:block;
-	margin: 30px;
-}
-/* I added this class so I could do some special styling of
- the about me text. Note that I added padding to make the text align
- better with the photo.*/
-.about{
-	padding-top:50px;
-	padding-bottom:50px;
-}
-
-.about ul{
-	overflow:hidden;
-}
-footer{
-	clear:both;
-	background-color:#69c322;
-	color:white;
-	padding: 50px;
-	border-top:3px solid black;
-}
-footer p{
-	text-align:center;
-	max-width: 1000px;
-	margin:0 auto;
-}
-
-/*Table Design*/
-
-table{
-	background-color: #eeeeee;
-	border-spacing:0;
-	margin-bottom: 100px;
-}
-th{
-	background-color:purple;
-	color:white;
-}
-td,th{
-padding: 10px;
-border: 1px solid #dddddd;
-	line-height: 1.5;
-}
-
-.resume h2{
-	font-size: 36px;
-}
-.resume h3{
-	font-size: 28px;
-}
-.resume h4{
-	text-align:center;
-}
-
-.resume h5{
-	font-size: 1em;
-}
-
-
-canvas {
-    background-color: #f1f1f1;
-	xxxmargin:0 auto;
-	display:block;
-	background-image:url(images/clouds.jpg);
-	border: 3px solid #800080;
-	box-shadow: 2px 2px 6px black;
-	margin-left:0;
-}
-.center-text{
-	text-align:center;
-}
-.game-controls{
-	margin-top: 20px;
-	text-align:center;
-}
-	
-.myButton {
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	background-color:#768d87;
-	border-radius:5px;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-label{
-	float: left;
-	width: 8em;
-	padding-right: 1em;
-}
-input, textarea{
-	margin-bottom:1em;
-	display:block;
-	border-radius: 5px;
-
-}
-#submit{
-	display:block;
-	background-color: lightgray;
-	height: 30px;
-}
-textarea{
-	height: 100px;
-	margin-top: 10px;
-}
-
-form{
-	background-color: #efefef;
-	border: 1px solid gray;
+li{
 	padding: 20px;
-	max-width: 100%;
-	margin: 0 auto;
-	box-shadow: 2px 2px 2px gray;
-}
-.center-game{
-	margin:0 auto;
-}
-.lname {
-	float:left;
-	margin-left:0;
-}
-canvas {
-    background-color: #f1f1f1;
-	xxxxmargin:0 auto;
-	dxxxisplay:block;
-	background-image:url(images/clouds.jpg);
-	border: 3px solid #800080;
-	box-shadow: 2px 2px 6px black;
-}
-footer p{
-	text-align:center;
-	max-width: 1000px;
-	margin:0 auto;
-}
-.button{
-	position:relative;
-	margin: 0 auto;
-}
-.main_1 {
-	display: none;
+	margin-bottom:px;
 }
 .logo{
 margin: 0 auto;
 display:block;
 }
-.h3{
-	text-align: center;
+.header{
+	background-color:white;
+}
+.header{
+	
+
 }

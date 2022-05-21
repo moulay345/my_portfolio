@@ -1,75 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <title>Lab 13  Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<!-----------------------facicon image----------------->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+   <head>
+      <meta charset="UTF-8">
+      <title>Animals</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="This is the website description">
+      <!--Google Font -->
+      <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+      <!-- Bootstrap Stylesheet-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	 <!--Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+      <!-- Custom styles - must be the last stylesheet -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+	   <link rel="stylesheet" type="text/css" href="style_slider.css">
+	   
+<style>
+.header{
+background-color:white;
+}
+</style>	   
+   </head>
+   <body>
+      <header class="header" >
+          <h1 class="text-center">Bootstrap Animals</h1>
+		  <img src="images/logo_dolphin_lab_13_6.png" alt="Portfolio Logo" height="100" width="300" class="img-fluid logo">
+       </header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  	</button>
+
+ 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="../../Lab_13_Final/index.html">Back</a></li>
+      			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+      			<li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+      			<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="slider.html">Slider</a></li>
+      			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>      
+    		</ul>
+    
+  	</div>
+</nav>
+<main>
+
+<div class="container">     <!---
+  <h2>Centered Image</h2>
+  <p>Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:</p>   ---->
+  <img src="images_resized/lion_and_babies_1200_400.jpg" class="mx-auto d-block" style="width:90%"> 
+</div>
+<br>
+ 
+ 
 
 
-    <link rel="stylesheet" href="style.css">
-	<style>
-		nav ul{
-			padding: 10px;
-			margin-bottom:0;
-		}
-	</style>
-	
-</head>
-<body>
-	<header>
-		<h1>My Portfolio Website</h1>	
-	
-<img src="images/logo_dolphin_lab_13_6.png" alt="Portfolio Logo" height="100" width="300" class="img-fluid logo">
+<div class="gallery">
 
-	</header>
-	
-	<nav>
-	    <ul>
-		<!------<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li><br>  ---->
-	    	<li><a href="index.html">Home</a></li>
-	    	<li><a href="resume.html">Resume</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-	    	<li><a href="table.html">Table</a></li>
-	    	<li><a href="form.html">Form</a></li>
-	    	<li><a href="multimedia.html">Multimedia</a></li>
-	    	<li><a href="javascript_game.html">JavaScript</a></li>
-	    </ul>
-	</nav>
-	
-	<main>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2></h2>
-					<p>These are web pages that I designed in HTML and CSS using Bootstrap and Font Awesome. Click on the images below to see the live website</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="puppies/index.html"><img src="images/best-in-show-puppies.png" height="600" width="600" alt="Best in Show Puppies Website" class="img-fluid example"></a>
-				</div>
-				<div class="col-sm-6">
-					<a href="animals/index.html"><img src="images/animal-photography.png" height="600" width="600" alt="Animal Photography Website" class="img-fluid example"></a>
-				
-				</div>
-			</div>
-		</div>
-	</main>
-	
-	<footer>
-	    <p>&copy; Copyright White Buffalo LLC. <br>This website is a sample portfolio website made for students of Saint Paul College. It features a mythical student named Sharp Toes. </p>
-	</footer>
-	<!--jQuery, Popper, and Bootstrap Javascript files-->
+
+    <div class="preview">
+        <img id="preview" src="images/adler_cropped.jpg" style="display:block;margin:0 auto;" alt=""  height="480" width="640"/>
+    </div>
+
+    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+        <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/adler_2_800_600.jpg" alt="Eagle" />
+        <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/animal_3_800_600.jpg" alt="lezard"  />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/fallow-deer-984573.jpg" alt="" />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/fox_cropped..jpg" alt="" />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/hedgehog_cropped..jpg" alt=""  />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/lizard_cropped..jpg" alt="" />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/otter_cropped..jpg" alt="" />
+        <img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/sheep_cropped..jpg" alt="" />
+    </div>
+</div>
+
+
+
+<!------
+
+
+ <div class="col-sm-12">
+      <hr>
+        <h1>Let's Stay in Touch</h1>
+      </div>
+    </div>
+            <div class="row ">
+            
+               <div class="col-sm-4">
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
+
+                  <h2>Github</h2></a>
+
+               </div>
+               <div class="col-sm-4">
+               <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+
+                  <h2>Linked In</h2></a>
+                  
+               </div>
+               <div class="col-sm-4">
+               <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+
+                  <h2>Email</h2></a>
+                  
+               </div>
+            </div>
+         </div>
+
+---->
+
+     </main>
+      <footer>
+  
+	  <small>The website features photographs of animals from <a href="http://pixabay.com">Pixabay.com</a>. The key to animal photography is patience.<br> 
+	  It can take a long time to get the right lighting and the best view of the animal. When photographing animals,<br>
+	  you do not have a lot of control...you need to wait for them.</small><br>
+	      <small>This website was made as a template for teaching Bootstrap 4 to students at Saint Paul College. <br>
+      &copy; White Buffalo LLC</small><br> 
+      </footer>
+	  
+	  <footer>
+    <div class="row footer1000">
+
+        <div class="col-sm-6" >
+            <h4 >Web Design Exercise</h4>
+            <p >Animal Photography is a website exercise on image galleries available on <a href="https://webdevstudents.com">WebDevStudents.com</a>. The images are royalty-free photos from pixabay.com. JavaScript was used to make the photo gallery, and Bootstrap columns for responsive layout. </p>
+
+        </div>
+
+
+        <div class="col-sm-6" >
+            <h4>Connect with Animal Photography!</h4>
+            <a href="https://facebook.com">
+                <p><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    Facebook</p>
+            </a>
+            <a href="https://www.linkedin.com/in/moulay-idriss-elbekraoui-45779b9/">
+                <p><i class="fa fa-instagram" aria-hidden="true"></i>
+                    Linked</p>
+            </a>
+            <a href="mailto:idriss3456@yahoo.com">
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                    Email Us</p>
+            </a>
+        </div>
+
+        <div class="col-sm-6" >
+
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <small>&copy;Copyright White Buffalo LLC. </small>
+    </div>
+</footer>
+	  
+	  
+	  
+	  
+      <!--jQuery, Popper, and Bootstrap Javascript files-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-	
-</body>
+   </body>
 </html>
