@@ -1,0 +1,350 @@
+/*     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap');    */
+/*      @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');     */
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Crimson+Text&display=swap');	   															    
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Lobster&display=swap');
+/* Added to remove the margins so that the menu bar can stretch
+ all the way to the sides of the page */
+body{
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: beige;
+}
+/* In order to have the background color fill the entire header, I 
+removed the margin and added some padding. The background color applies 
+to the padding but not to the margin. */
+
+header{
+	background-color: #dddddd;
+
+}
+h1{
+	font-family: 'Ceviche One', cursive;
+	text-align:center;
+	margin:0;
+	padding: 20px;
+	font-size: 40px;
+}
+
+h2{
+	font-family: 'Lobster', cursive;
+	color: red;
+}
+h3{
+	margin-top:1px;
+	margin-bottom:20px;
+	font-weight:bold;
+	color: red;
+    
+}
+h4{
+	background-color: silver;
+}
+h5{
+	text-align: center;
+}
+
+p{
+	font-size: 18px;
+	font-family: 'Crimson Text', serif;
+	text-align: justify;
+	text-justify: inter-word;
+}
+nav{
+	background-color: purple;
+	margin:0;
+	border-bottom:1px solid black;
+	border-top: 1px solid black;
+}
+nav ul{
+	list-style-type: none;
+	text-align:center;
+	padding-left:0;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+nav li{
+	display:inline;
+	padding: 5px 10px;
+}
+nav a{
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+nav a:link{
+	color:white;
+}
+nav a:visited{
+	color:white;
+}
+nav a:hover{
+	color:#dddddd;
+}
+nav a:active{
+	color:pink;
+}
+
+/* I put in a max width of 1000px on the main section because I don't have a lot of content 
+in thie website. On a website with more content and especially 
+with more design and images, I would likely use 1200px as the max-width */
+main{
+	margin: 0 auto;
+	max-width: 1000px;
+	padding:10px;
+	background-color:beige;
+
+}
+hr{
+	max-width: 80%;
+	margin: 40px auto;
+	text-align:center;
+}
+
+/* I added this class so I could do some special styling 
+on the image. */
+.monster{
+	float:left;
+	max-width:40%;
+	height: auto;
+	display:block;
+	margin: 30px;
+}
+/* I added this class so I could do some special styling of
+ the about me text. Note that I added padding to make the text align
+ better with the photo.*/
+.about{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.about ul{
+	overflow:hidden;
+}
+footer{
+	clear:both;
+	background-color: purple;
+	color:white;
+	padding: 50px;
+	border-top:3px solid black;
+}
+footer p{
+	text-align:center;
+	max-width: 1000px;
+	margin:0 auto;
+}
+
+/*Table Design*/
+
+table{
+	background-color: #eeeeee;
+	border-spacing:0;
+	margin-bottom: 100px;
+}
+th{
+	background-color:purple;
+	color:white;
+}
+td,th{
+padding: 10px;
+border: 1px solid #dddddd;
+	line-height: 1.5;
+}
+
+.resume h2,
+.resume h4{
+	text-align:center;
+}
+
+.resume h5{
+	font-size: 1em;
+}
+
+.resume h2{
+	font-size: 36px;
+}
+.resume h3{
+	font-size: 28px;
+}
+canvas {
+    background-color: #f1f1f1;
+	xxxmargin:0 auto;
+	display:block;
+	background-image:url(images/clouds.jpg);
+	border: 3px solid #800080;
+	box-shadow: 2px 2px 6px black;
+	margin-left:0;
+}
+.center-text{
+	text-align:center;
+}
+.game-controls{
+	margin-top: 20px;
+	text-align:center;
+}
+	
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+label{
+	float: left;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea{
+	margin-bottom:1em;
+	display:block;
+	border-radius: 5px;
+
+}
+#submit{
+	display:block;
+	background-color: lightgray;
+	height: 30px;
+}
+textarea{
+	height: 100px;
+	margin-top: 10px;
+}
+
+form{
+	background-color: #efefef;
+	border: 1px solid gray;
+	padding: 20px;
+	max-width: 100%;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px gray;
+}
+.center-game{
+	margin:0 auto;
+}
+.lname {
+	float:left;
+	margin-left:0;
+}
+canvas {
+    background-color: #f1f1f1;
+	xxxxmargin:0 auto;
+	dxxxisplay:block;
+	background-image:url(images/clouds.jpg);
+	border: 3px solid #800080;
+	box-shadow: 2px 2px 6px black;
+}
+ 
+.button{
+	position:relative;
+	margin: 0 auto;
+}
+.main_1 {
+	display: none;
+}
+i.fa{
+	font-size: 100px;
+	color:purple;
+}
+.img-fluid {
+	display:block;
+	max-width:100%;
+	height:auto;
+	border-radius:50%;
+}
+.container-fluid {
+	
+	
+}
+.col-sm-4 {
+		background-color: ;
+	
+  border-radius: 50%;
+		 
+	
+}
+#wrapperxxxxx
+{
+		margin-left: auto;
+		margin-right: auto;
+		width:80%; 
+		min-width: 700px; 
+		max-width: 1024px;
+		background-color:#90C7E3 ;
+		xxxxxbox-shadow: 5px 5px 5px 0px #000000;
+		box-shadow:  4px 4px 15px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+		/** inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); **/
+		
+}
+.home-hero{
+
+	background-image:url(images/header.jpg);
+	height: 475px;
+	background-size:cover;
+	background-position: center;
+	color: #042837;
+	padding: 10px 10px 10px 30px; 
+}
+img{
+    margin:0 auto;
+    display:block;
+	border: 20px solid purple;
+	padding: 10px;
+	 xxxxxxborder-radius: 50%;
+}
+.col-sm-4 h3{
+    text-align:center;
+}
+blockquote{
+	margin:30px;
+}
+footer{
+	color:white;
+	background-color: #022837;
+	text-align:center;
+	padding:15px;
+	margin:0;
+	display:block;
+}
+.col-sm-4 h3{
+    text-align:center;
+}
+.col-sm-4 {
+		background-color:;
+		 
+	
+}
+.image1{
+	 border-radius:50%;
+	display:none;
+}
+#image1{
+	 border-radius:50%;
+
+}
+#image_2{
+	float:left;
+	width: 400px;
+	height: 500px;
+	margin:50px;
+	border-radius:50%;
+}
